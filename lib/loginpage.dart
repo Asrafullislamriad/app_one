@@ -7,7 +7,7 @@ class loginpage extends StatelessWidget {
       child: Center(
         child: Text(
           "loginpage",
-          style: TextStyle(fontSize: 40, color: Colors.blue),
+          style: TextStyle(fontSize: 40, color: Color.fromARGB(255, 71, 104, 132),),
         ),
       ),
     );
