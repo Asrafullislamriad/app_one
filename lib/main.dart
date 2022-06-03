@@ -1,7 +1,9 @@
+import 'package:app_one/home_page.dart';
+import 'package:app_one/loginpage.dart';
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(const hello());
+void main(List<String> args) {
+  runApp(hello());
 }
 
 class hello extends StatelessWidget {
@@ -9,16 +11,12 @@ class hello extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text("hello"),
-      ),
-      body:Center(
-        child: Container(
-          child: Text("hello world"),
-        ),
-      ), 
-      drawer: Drawer(),
+    return MaterialApp(
+      home: homepage(),
+      routes: {
+        "/": (context) => homepage(),
+        "/login": (context) => loginpage(),
+      },
     );
   }
 }
