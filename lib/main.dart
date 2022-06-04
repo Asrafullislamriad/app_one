@@ -13,6 +13,7 @@ class hello extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: homepage(),
+      initialRoute: "/",
       routes: {
         "/": (context) => homepage(),
         "/login": (context) => loginpage(),

@@ -7,13 +7,15 @@ class homepage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("hello my app ee"),
+        title: Text("hello my  dd app ee"),
       ),
       body: Center(
         child: Container(
-          child: Text("hello my app"),
+          child: Text("hello my app ee t"),
+          color: Colors.blueGrey,
         ),
       ),
+      drawer: Drawer(),
     );
   }
 }
